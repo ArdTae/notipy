@@ -48,11 +48,11 @@ if umenu == "hour":
     logger.info("Был выбран /// hour")
     print("Через один час вам нужно будет написать [/turn]")
     print("Возможность ввести команду будет доступна за 1 минуту")
-    time.sleep(10)
+    time.sleep(3540)
     def hoti():
         logger.error("/// Ошибочно /// Время вышло")
     
-    timer = threading.Timer(10, hoti, args=None, kwargs=None)
+    timer = threading.Timer(60, hoti, args=None, kwargs=None)
     timer.start()
     
     hmenu = input("Enter: ")
@@ -73,10 +73,10 @@ if umenu == "day":
     logger.info("Был выбран /// day")
     print("Через один день вам нужно будет написать [/turn]")
     print("Возможность ввести команду будет доступна за 1 минуту")
-    time.sleep(10)
+    time.sleep(86340)
     def dati():
         logger.error("/// Ошибочно /// Время вышло")
-    datimer = threading.Timer(10, dati, args=None, kwargs=None)
+    datimer = threading.Timer(60, dati, args=None, kwargs=None)
     datimer.start()
 
     daymenu = input("Enter: ")
