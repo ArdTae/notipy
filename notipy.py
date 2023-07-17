@@ -33,39 +33,40 @@ time.sleep(1)
 chbar.finish()
 
 
-
-print("______________________________ | ")
-print("     /   \   /   \   /   \     | ", dt)
-print("     n   o   t   i   p   y     | ", uname.system, uname.node, )
-print("     /   \   /   \   /   \     | ", uname.release, )
-print("—————————————————————————————— | ", uname.machine, uname.processor, uname.version)
 logger.info("/// Login Warning ///")
-print("Введите через какое время: ")
-print("[day] one day, [hour] one hour, [other] other time")
+print("___________________________________| ")
+print("     /   \   /   \   /   \         | ", dt)
+print("     n   o   t   i   p   y         | ", uname.system, uname.node, )
+print("     /   \   /   \   /   \         | ", uname.release, )
+print("———————————————————————————————————| ", uname.machine, uname.processor, uname.version)
+
+print("                                   | ")
+print("                                   | Enter time: ")
+print("                                   | [day] one day, [hour] one hour, [other] other time")
 
 
 
 
-umenu = input("Enter: ")
+umenu = input("Enter:                             | ")
 if umenu == "hour":
 
 
 
-    logger.info("Был выбран /// hour")
-    print("Через один час вам нужно будет написать [/turn]")
-    print("Возможность ввести команду будет доступна за 1 минуту")
+    logger.info("Selected /// hour")
+    print("                                   | After an hour, you need to enter [/turn]")
+    print("                                   | You can enter a command in 1 minute")
     time.sleep(10)
     def hoti():
-        logger.error("/// Ошибочно /// Время вышло")
+        logger.error("/// False /// Time's up")
     
     timer = threading.Timer(10, hoti, args=None, kwargs=None)
     timer.start()
     
-    hmenu = input("Enter: ")
+    hmenu = input("Enter:                             | ")
     
     if hmenu == "/turn":
         timer.cancel()
-        logger.info("/// Успешно /// [/turn]")
+        logger.info("                               | /// Успешно /// [/turn]")
         
         
         
@@ -76,28 +77,28 @@ if umenu == "day":
 
 
 
-    logger.info("Был выбран /// day")
-    print("Через один день вам нужно будет написать [/turn]")
-    print("Возможность ввести команду будет доступна за 1 минуту")
+    logger.info("Selected /// day")
+    print("                                   | After one day, you need to enter [/turn]")
+    print("                                   | You can enter a command in 1 minute")
     time.sleep(10)
     def dati():
-        logger.error("/// Ошибочно /// Время вышло")
+        logger.error("/// False /// Time's up")
     datimer = threading.Timer(10, dati, args=None, kwargs=None)
     datimer.start()
 
-    daymenu = input("Enter: ")
+    daymenu = input("Enter:                             | ")
     
     if daymenu == "/turn":
         datimer.cancel()
-        logger.info("/// Успешно /// [/turn]")
+        logger.info("                               | /// Успешно /// [/turn]")
         
         
         
 if umenu == "other":
-    print("Введите количество секунд(больше 60): ")
+    print("                               | Введите количество секунд(больше 60): ")
     second = input("Enter: ")
     if second < 60:
-        print("Вы ввели меньше 60")
+        print("                              | Вы ввели меньше 60")
     selected_second = second - 60
     time.sleep(selected_second)
     
@@ -108,7 +109,7 @@ if umenu == "other":
     other_timer = threading.Timer(60, dati, args=None, kwargs=None)
     other_timer.start()
     
-    othermen = input ("Enter: ")
+    othermen = input ("Enter:                        | ")
     
     if othermen == "/turn":
         other_timer.cancel()
