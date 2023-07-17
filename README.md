@@ -1,1 +1,3 @@
 # notipy
+
+Example of work
