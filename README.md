@@ -2,3 +2,10 @@
 # notipy
 
 
+# Documentation:
+
+1.The purpose of this project is one: to protect your data from third parties. You start the project, choose after what time the code will ask you for the authorization command, if you do not enter your data will be destroyed.
+
+2.Python is also used for the bash installer file. Python uses libraries such as:
+# OS, time, platform, vk_api, colorama ad much more
+3.
