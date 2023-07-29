@@ -3,11 +3,21 @@
 
 
 # Documentation:
+1.Please note. That this script can erase all your data in many areas, which are described below, using the script you take full responsibility for yourself
 
-1.The purpose of this project is one: to protect your data from third parties. You start the project, choose after what time the code will ask you for the authorization command, if you do not enter your data will be destroyed.
+2.The purpose of this project is one: to protect your data from third parties. You start the project, choose after what time the code will ask you for the authorization command, if you do not enter your data will be destroyed.
 
-2.Python is also used for the bash installer file. Python uses libraries such as:
+3.Python is also used for the bash installer file. Python uses libraries such as:
 # OS, time, platform, vk_api, colorama ad much more
-3.The project has an automatic logging function, it cannot be disabled in any way. So be careful with the log file(debug_notipy.log)
+
+4.The project has an automatic logging function, it cannot be disabled in any way. So be careful with the log file(debug_notipy.log)
 You do not need to create a file with this name, it will be created automatically
-4.Automatic self-deletion is also implemented, for this you need to select "Y" when starting the project and simply complete the project.
+
+5.Automatic self-deletion is also implemented, for this you need to select "Y" when starting the project and simply complete the project.
+
+6.Here you can keep your anonymity in projects such as vk, telegram, YouTube, mail.To do this, you just need to familiarize yourself with the commands
+
+7.For the script to work properly, you need to create all the conditions for its operation:
+* Be able to run a script (terminal or other python compiler)
+* Have python installed
+* Do not close the script until it is fully (photo)
