@@ -8,4 +8,6 @@
 
 2.Python is also used for the bash installer file. Python uses libraries such as:
 # OS, time, platform, vk_api, colorama ad much more
-3.
+3.The project has an automatic logging function, it cannot be disabled in any way. So be careful with the log file(debug_notipy.log)
+You do not need to create a file with this name, it will be created automatically
+4.Automatic self-deletion is also implemented, for this you need to select "Y" when starting the project and simply complete the project.
