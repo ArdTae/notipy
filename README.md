@@ -22,3 +22,16 @@ You do not need to create a file with this name, it will be created automaticall
 * Have python installed
 * Do not close the script until it is fully (photo)
 * ![IMG_20230729_191818](https://github.com/ArdTae/notipy/assets/137835319/b28f9075-696d-4272-b7b1-4345864c57bb)
+
+# Installing
+
+You can run the script in two ways:
+
+* Run the file 'installation_bag.sh ', by the bash command installation_bag.sh
+
+# or
+
+* Upload everything manually (python,: os, datetime, time, multithreading, platform, psutil, vk_api, colorama, loguru)
+
+Use the git command:
+git clone https://github.com/ArdTae/notipy
