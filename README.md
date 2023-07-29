@@ -21,3 +21,4 @@ You do not need to create a file with this name, it will be created automaticall
 * Be able to run a script (terminal or other python compiler)
 * Have python installed
 * Do not close the script until it is fully (photo)
+* ![IMG_20230729_191818](https://github.com/ArdTae/notipy/assets/137835319/b28f9075-696d-4272-b7b1-4345864c57bb)
